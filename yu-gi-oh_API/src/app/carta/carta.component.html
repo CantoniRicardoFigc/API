@@ -1,5 +1,20 @@
-<input class="form-control me-2" type="text" placeholder="Search" #searchApi>
-<button (click)="ricercaApi(searchApi)" class="btn btn-dark" type="button">Search</button>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)"> Yu - Gi - Oh !</a>
+      <input class="form-control me-2" type="text" placeholder="Search" #searchApi>
+      <button (click)="ricercaApi(searchApi)" class="btn btn-dark" type="button">Search</button>
+    </div>
+</nav>
+
+<div>
+    <h5>
+      Limit Reverse<br>
+      The 13th Grave<br>
+      D/D Savant Thomas<br>
+      Number 39: Utopia Rising<br>
+      The Legendary Exodia Incarnate<br>
+    </h5>
+</div>
 
 <div class="card" style="width: 220px; margin-left: 20px; margin-top: 20px;" *ngFor="let daum of ris.data">
     <div style="width: 220px; margin-left: 20px; margin-top: 20px"><h3>Searched card</h3></div>
