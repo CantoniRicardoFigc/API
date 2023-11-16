@@ -4,6 +4,7 @@
 <div class="card" style="width: 220px; margin-left: 20px; margin-top: 20px;" *ngFor="let daum of ris.data">
     <div style="width: 220px; margin-left: 20px; margin-top: 20px"><h3>Searched card</h3></div>
     <div class="card-body"><h6>{{daum.name}}</h6></div>
+    <img src="{{daum.card_images}}">
     <a>Type: {{daum.type}}</a><br>
     <a>Name: {{daum.name}}</a><br>
     <a>Race: {{daum.race}}</a><br>

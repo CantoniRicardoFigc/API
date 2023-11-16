@@ -18,6 +18,12 @@ export class CartaComponent {
   ricercaApi(cartaCercata : HTMLInputElement) {
     this.cartaSearch = cartaCercata.value;
     this.obsCard = this.http.get<Root>('https://db.ygoprodeck.com/api/v7/cardinfo.php?name=' + this.cartaSearch)
-    this.obsCard.subscribe((data : Root)=>(this.ris = (data)))
+    this.obsCard.subscribe(
+      (data : Root)=>
+      {
+        this.ris = (data);
+        console.log(data)
+      })
+    
   }
 }
